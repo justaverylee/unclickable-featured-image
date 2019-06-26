@@ -43,7 +43,8 @@ to 'javascript:void(0);'
 
 == Screenshots ==
 
-None. This plugin should make no changes to the look of your site.
+1. None. This plugin should make no changes to the look of your site.
+
 == Changelog ==
 
 = 1.0 =
