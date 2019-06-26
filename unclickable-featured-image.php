@@ -3,7 +3,7 @@
  * Plugin Name: Unclickable Featured Image
  * Plugin URI: https://github.com/zggz/unclickable-featured-image
  * Description: A wordpress plugin that forces all featured images to NOT be links
- * Version: 1.0
+ * Version: 1.1
  * Auther: Zach Gottesman
  * Author URI: http://zachgottesman.com
  */
@@ -24,7 +24,7 @@
   */
  function unlink_thumbnail( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
  	if (is_singular()) {
-		$html = "<a href='javascript:void(0);'>$html</a>";
+		$html = "<a href='javascript:void(0);' style='cursor:default'>$html</a>";
 	}
  	return $html;
  }

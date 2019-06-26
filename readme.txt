@@ -3,7 +3,7 @@ Contributors: zggz
 Tags: Featured Image, Thumbnail, Thumbnails, Links, Images, Themes
 Requires at least: 2.9.0
 Tested up to: 5.2.2
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 5.2.2
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
@@ -47,10 +47,16 @@ to 'javascript:void(0);'
 
 == Changelog ==
 
+= 1.1 =
+* Added style='cursor:default' to thumbnail overlay
+
 = 1.0 =
 * Original Release
 
 == Upgrade Notice ==
+
+= 1.1 =
+The cursor (when over the thumbnail) now looks normal (not like a it's a link)
 
 = 1.0 =
 It exists
