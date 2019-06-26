@@ -8,7 +8,7 @@ Requires PHP: 5.2.2
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
 
-A wordpress plugin that forces all featured images to NOT be links
+A WordPress plugin that forces all featured images to NOT be links
 
 == Description ==
 
@@ -20,7 +20,7 @@ Once enabled, it will make every featured image (on a post/page) unclickable.
 
 Installation:
 1. Download this repository
-2. Upload the 'unclickable-featured-image' folder to your webserver
+2. Upload the 'unclickable-featured-image' folder to your webserver (it's the whole repo)
 3. Place the 'unclickable-featured-image' folder in the '/wp-content/plugins' folder
 4.  Activate the plugin from the WordPress admin console
 
