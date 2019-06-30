@@ -40,7 +40,7 @@ function unlink_script() {
 		if (!get_option('unclickable_options_thumbnail') || has_post_thumbnail()) {
 		  // load the script and pass it appropriate options
 		  
-		  wp_enqueue_script('unclickable-client', plugin_dir_url(__FILE__) . 'unclickable-client.js');
+		  wp_enqueue_script('unclickable-client', plugins_url('unclickable-client.js', __FILE__));
 		  $jsOptions = array(
 		  	// the querySelectorAll argument:
 			'selector'  => get_option('unclickable_options_selector'),
@@ -140,7 +140,7 @@ add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'unclickable_add_se
 // the code that is rendered on the settings page
 function unclickable_options_page()
 {
-  wp_enqueue_script('unclickable-admin', plugin_dir_url(__FILE__) . 'unclickable-admin.js');
+  wp_enqueue_script('unclickable-admin', plugins_url('unclickable-admin.js', __FILE__));
   // this array describes the form that will be generated
   // I use this so that I can use a loop instead of writing completely
   // repetative HTML
