@@ -3,7 +3,7 @@ Contributors: zggz
 Tags: Featured Image, Thumbnail, Thumbnails, Links, Images, Themes
 Requires at least: 2.9.0
 Tested up to: 5.2.2
-Stable tag: 2.0
+Stable tag: 2.1
 Requires PHP: 5.2.2
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
@@ -50,6 +50,9 @@ to 'javascript:void(0);'
 
 == Changelog ==
 
+= 2.1 =
+* Switched to plugins_url() to find JavaScript files
+
 = 2.0 =
 * Added options page
 * Added optional client side unlinking code
@@ -62,6 +65,9 @@ to 'javascript:void(0);'
 * Original Release
 
 == Upgrade Notice ==
+
+= 2.1 =
+* Better support for non-standard folder layouts and caching
 
 = 2.0 =
 * More ways to make featured images unclickable. Larger theme compatibility.

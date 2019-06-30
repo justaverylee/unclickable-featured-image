@@ -3,7 +3,7 @@
  * Plugin Name: Unclickable Featured Image
  * Plugin URI: https://github.com/zggz/unclickable-featured-image
  * Description: A wordpress plugin that forces all featured images to NOT be links
- * Version: 2.0
+ * Version: 2.1
  * Author: Zach Gottesman
  * Author URI: http://zachgottesman.com
  */
