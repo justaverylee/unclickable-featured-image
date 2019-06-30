@@ -35,9 +35,16 @@ add_filter('post_thumbnail_html', 'unlink_thumbnail', 1, 5);
  */
 function unlink_script() {
 	// only on singular pages, and if the select option is enabled
+	echo "<!-- Singular " . (is_singular() ? "Singular" : "not") . "-->";
+	echo "<!-- Select   " . (get_option('unclickable_options_select') ? "select" : "not") . "-->";
 	if (is_singular() && get_option('unclickable_options_select')) {
+		echo "<!-- Checking thumbnail " . (has_post_thumbnail() ? "Thubmanil" : "not") . "-->";
+		echo "<!-- thumb   " . (get_option('unclickable_options_thumbnail') ? "thumb" : "not") . "-->";
+
 		// if 'Check if thumbnail exists' is unchecked or the post has a thumbnail
 		if (!get_option('unclickable_options_thumbnail') || has_post_thumbnail()) {
+		  echo "<!-- Loading script -->";
+
 		  // load the script and pass it appropriate options
 		  
 		  wp_enqueue_script('unclickable-client', plugin_dir_url(__FILE__) . 'unclickable-client.js');
